@@ -3,18 +3,17 @@ pipeline {
     stages {
         stage('clone and clean') { 
             steps {
-                sh 'git clone https://github.com/vaidyanath08/demo-cicd'
-                sh 'mvn clean -f demo-cicd'
+                sh 'mvn clean'
             }
         }
         stage('Test') { 
             steps {
-                sh 'mvn test -f demo-cicd'
+                sh 'mvn test'
             }
         }
         stage('Deploy') { 
             steps {
-                sh 'mvn package -f demo-cicd'
+                sh 'mvn package'
             }
         }
     }
