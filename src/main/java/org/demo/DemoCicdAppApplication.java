@@ -8,6 +8,6 @@ public class DemoCicdAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoCicdAppApplication.class, args);
-		System.Out.Println("Hello World!!!!!");
+		System.out.Println("Hello World!!!!!");
 	}
 }
